@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppShopping
+namespace AppShopping.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Menu : Shell
+    public partial class Stores : ContentPage
     {
-        public Menu()
+        public Stores()
         {
             InitializeComponent();
         }
