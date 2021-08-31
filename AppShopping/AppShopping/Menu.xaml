@@ -20,4 +20,5 @@
     <ShellContent Title="Novidades" Icon="MenuIconNews" ContentTemplate="{DataTemplate views:Stores}"/>
     <ShellContent Title="Como chegar" Icon="MenuIconMaps" ContentTemplate="{DataTemplate views:Stores}"/>
     <ShellContent Title="WiFi" Icon="MenuIconWifi" ContentTemplate="{DataTemplate views:Stores}"/>
+    <ShellContent Title="Detail" Icon="MenuIconWifi" ContentTemplate="{DataTemplate views:EstablishmentDetail}"/>
 </Shell>

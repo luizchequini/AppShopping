@@ -25,20 +25,27 @@
                 <Setter Property="Shell.TitleColor" Value="{StaticResource PrimaryColor}" />
                 <Setter Property="Shell.UnselectedColor" Value="{StaticResource Black}" />
             </Style>
-
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource FlyoutBaseStyle}" />
+            <Style TargetType="ShellContent" BasedOn="{StaticResource FlyoutBaseStyle}" />
 
             <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
                 <Setter Property="BackgroundColor" Value="{StaticResource LightGray}" />
             </Style>
 
+            <Style TargetType="Frame">
+                <Setter Property="CornerRadius" Value="0"/>
+                <Setter Property="HasShadow" Value="False"/>
+                <Setter Property="BorderColor" Value="{StaticResource BorderColor}"/>
+                <Setter Property="Padding" Value="1"/>
+            </Style>
+            
             <Style TargetType="Label">
                 <Setter Property="FontFamily" Value="MontserratRegular" />
             </Style>
 
             <Style TargetType="Entry">
                 <Setter Property="FontFamily" Value="MontserratRegular" />
-                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="FontSize" Value="15"/>
                 <Setter Property="TextColor" Value="{StaticResource Black}"/>
             </Style>
             
@@ -57,7 +64,12 @@
                 <Setter Property="BorderWidth" Value="1" />
                 <Setter Property="CornerRadius" Value="0" />
             </Style>
-            
+
+            <Style TargetType="Line">
+                <Setter Property="Stroke" Value="#707070" />
+                <Setter Property="StrokeDashArray" Value="3,3" />
+            </Style>
+
             <Style TargetType="Label" x:Key="TitleEstablishment">
                 <Setter Property="FontFamily" Value="MontserratRegular"/>
                 <Setter Property="FontSize" Value="14"/>
@@ -68,6 +80,26 @@
                 <Setter Property="FontFamily" Value="MontserratLight"/>
                 <Setter Property="FontSize" Value="12"/>
                 <Setter Property="TextColor" Value="{StaticResource TextSecondColor}"/>
+            </Style>
+
+            <!--TELA DE DETALHES DO ESTABELECIMENTO-->
+
+            <Style TargetType="Label" x:Key="TitleType">
+                <Setter Property="FontFamily" Value="MontserratRegular"/>
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="TextColor" Value="{StaticResource Black}"/>
+            </Style>
+            <Style TargetType="Label" x:Key="TitleName">
+                <Setter Property="FontFamily" Value="MontserratRegular"/>
+                <Setter Property="FontSize" Value="36"/>
+                <Setter Property="TextColor" Value="{StaticResource PrimaryColor}"/>
+                <Setter Property="Margin" Value="0,-10,0,0"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="SubTitle">
+                <Setter Property="FontFamily" Value="MontserratBold"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="TextColor" Value="{StaticResource Black}"/>
             </Style>
 
         </ResourceDictionary>
