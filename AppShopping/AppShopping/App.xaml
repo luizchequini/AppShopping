@@ -11,6 +11,7 @@
 
             <Color x:Key="TextPrimaryColor">#000000</Color>
             <Color x:Key="TextSecondColor">#A0A0A0</Color>
+            <Color x:Key="BorderColor">#707070</Color>
             
             <Color x:Key="SuccessColor">#1BAB42</Color>
             <Color x:Key="ErrorColor">#F44343</Color>
